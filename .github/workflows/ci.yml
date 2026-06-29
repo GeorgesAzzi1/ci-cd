@@ -1,0 +1,21 @@
+name: ci
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get project code
+        uses: actions/checkout@v4
+
+      - name: Test step
+        run: echo "Running tests..."
+
+      - name: Build step
+        run: echo "Building project..."
