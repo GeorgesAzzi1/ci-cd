@@ -2,7 +2,7 @@ name: Docker cd
 
 on:
   push:
-    branches: [master]
+    branches: [ci-cd]
 
 jobs:
   deploy:
