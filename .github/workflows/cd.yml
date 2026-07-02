@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get project code
+      - name: Get code
         uses: actions/checkout@v5
 
       - name: Login to Docker Hub
